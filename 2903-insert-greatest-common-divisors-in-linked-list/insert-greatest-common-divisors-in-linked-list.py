@@ -12,7 +12,7 @@ class Solution:
         
         curr=head
         while curr and curr.next:
-            gc=gcd(curr.val,curr.next.val)
+            gc=math.gcd(curr.val,curr.next.val)
             node=ListNode(gc)
             node.next=curr.next
             curr.next=node
